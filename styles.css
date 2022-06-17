@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 18px;
+}
+@keyframes mark {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--Very-Dark-Cyan);
+    }
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--Very-Dark-Cyan);
+}
+img {
+    width: 100%;
+}
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2, p {
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 2rem;
+}
+header {
+    padding: 3rem .5rem;
+    background-color: var(--Very-Pale-Cyan);
+    background-image: url(images/bg-hero-mobile.svg);
+}
+div.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+div.head > img {
+    width: 7rem;
+}
+div.head > a {
+    width: 7rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--Very-Dark-Cyan);
+    padding: .5rem;
+    background-color: white;
+    border-radius: 2rem;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 0 2px;
+}
+div.head > a:hover {
+    color: var(--Very-Dark-Cyan);
+    opacity: 50%;
+}
+div.heading-info {
+    text-align: center;
+    line-height: 1.5;
+}
+div.heading-text > h1 {
+    width: 93vw;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+div.heading-text > p {
+    margin-bottom: 2rem;
+}
+div.heading-text > a {
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: var(--Pink);
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+    font-family: 'Open Sans', sans-serif;
+}
+div.heading-text > a:hover {
+    opacity: 70%;
+}
+main {
+    padding: 3rem .5rem;
+    animation-name: mark;
+    animation-duration: 10s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+}
+section {
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: white;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 2px;
+}
+section > div.text {
+    margin-top: 3rem;
+}
+div.community-section {
+    padding: 2rem 0;
+    padding-bottom: 2rem;
+    position: relative;
+    animation-name: mark;
+    animation-duration: 10s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+}
+div.community {
+    top: 0vw;
+    width: 98vw;
+    left: 1vw;
+    padding: 1.5rem .5rem;
+    text-align: center;
+    border-radius: .5rem;
+    background-color: white;
+    line-height: 1.5;
+    position: absolute;
+}
+div.community > a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: var(--Pink);
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+div.community > a:hover {
+    opacity: 70%;
+}
+footer {
+    background-color: var(--Very-Dark-Cyan);
+    padding: 8rem .5rem 2rem;
+}
+div.contacts > img {
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+div.contacts > div {
+    display: grid;
+    grid-template-columns: 2rem 14rem;
+    margin-bottom: 2rem;
+}
+div.contacts > div > img {
+    width: 1rem;
+}
+div.location > p {
+    color: white;
+    margin-bottom: 0;
+}
+div.phone > a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+div.mail {
+    align-items: center;
+}
+div.mail > a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+footer > ul {
+    list-style-type: none;
+}
+footer > ul > li {
+    margin-bottom: 1rem;
+}
+footer > ul > li > a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+footer > ul > li > a:hover {
+    text-decoration: underline;
+}
+footer > div.footer-text {
+    color: white;
+    text-align: center;
+    font-size: .8rem;
+    margin-bottom: 0;
+}
+footer > div.social-media {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+footer > div.social-media > ul {
+    display: grid;
+    grid-template-columns: 3rem 3rem 3rem;
+    list-style-type: none;
+    width: 9rem;
+    margin: 0 auto;
+}
+footer > div.social-media > ul > li > a {
+    color: white;
+    text-decoration: none;
+    border: solid 1px;
+    border-radius: 2rem;
+    padding: 0.7rem 0.8rem;
+}
+footer > div.social-media > ul > li > a.fa-facebook {
+    padding: .55rem .8rem;
+}
+footer > div.social-media > ul > li > a.fa-facebook:hover, 
+footer > div.social-media > ul > li > a:hover {
+    color: var(--Pink);
+}
+footer.attribution {
+    padding: 0;
+}
+footer.attribution > p { 
+    padding: 0;
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+}
+.attribution a { 
+    color: var(--Grayish-Blue); 
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        padding: 3rem 0;
+        background-image: url(images/bg-hero-desktop.svg);
+    }
+    div.head {
+        width: 94vw;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+    div.heading-info {
+        width: 94vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 44vw 50vw;
+        align-items: center;
+        text-align: left;
+    }
+    div.heading-text {
+        padding-right: 4rem;
+    }
+    div.heading-text > h1 {
+        width: 40vw;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    div.heading-text > a {
+        width: 13rem;
+        margin: 0;
+        margin-bottom: 4rem;
+    }
+    main {
+        padding: 3rem;
+    }
+    section {
+        padding: 3rem;
+        display: grid;
+        direction: rtl;
+        grid-template-columns: 30vw 49vw;
+        text-align: left;
+        align-items: center;
+    }
+    main > section > div.text {
+        margin-right: 3rem;
+    }
+    div.community {
+        width: 60vw;
+        left: 20vw;
+    }
+    div.community > a {
+        width: 15rem;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 36% 15% 13% 36%;
+        align-items: center;
+        padding: 8rem 2.5rem 2rem;
+    }
+    footer > div.social-media {
+        margin-top: 2rem;
+    }
+    footer > div.social-media > ul {
+        margin: 0;
+    }
+    footer > div.footer-text {
+        text-align: end;
+        width: 77vw;
+        margin-left: 8rem;
+        color: white;
+    }
+    footer.attribution,
+    footer.attribution > p {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    footer {
+        grid-template-columns: 40% 15% 13% 32%;
+        padding: 8rem 4.5rem 2rem;
+    }
+    footer > p {
+        width: 65rem;
+    }
+}
